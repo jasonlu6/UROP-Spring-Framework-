@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Thumbnails from the Gibson Assembly Experiment</title>
+</head>
+
+<!-- File: thumbnails.html -->
+<!-- Author: Jason Lu (jasonlu6@bu.edu) -->
+<!--  Description: HTML File that will be able to render
+the CSS (thumbnails.css) to show all thumbnails of the 
+DNA experiments that Rohin has made -->
+<!-- Densmore CIDAR LAB -->
+<!-- UROP Project 3 -->
+<!-- Collaborators: -->
+<!-- Rohin Banerji (rohinb96@bu.edu) -->
+<!-- Marliene Pavan (mapavan@bu.edu) -->
+<!-- Doug Densmore (dougd@bu.edu) -->
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<h1 style="color:green;">Gibson Assembly Thumbnails:</h1>
+
+<style>
+/* CSS of image 1 */ 
+img {
+	/* gray border by default */
+	border: 1px solid #ddd;
+	/* maybe square for now */
+	border-radius: 2px;
+	/* padding alignment */
+	padding: 5px;
+	/* set a width for thumbnail */
+	width: 50px;
+	/* set a height for thumbnail */
+	height: 100px; 
+}
+
+/* blue shadow hover effect */
+/* RGBA: Red, Green, Blue, alpha (transparent vs. opaque) */
+img:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+</style>
+<body>
+<!-- target reference to the image -->
+<!-- The New vs. Old Primer Test from Rohin's Notebook -->
+
+<!--  general structure: -->
+<!-- a target = target file -->
+<!--  href = reference website of image -->
+<!-- img src = source of the image -->
+<!-- alt = alternative name for the image -->
+
+<!--  make a table to store the images -->
+
+<!-- make the border somewhat noticeable -->
+<table border="2" bordercolor="blue" align="center">
+
+	<tr>
+		<th>Image:</th>
+		<th>Number:</th>
+		<th>Thumbnail:</th>
+		<th>Date upload (dd/mm/yyyy hh:mm:ss)</th>
+	</tr>
+	
+	<tr>
+		<td>Image: The New and Old Primer Tests from Rohin's Notebook</td>
+		<td align="center">1</td>
+		<td>
+			<a target= "_blank" 
+			href="file:///Users/jasonlu/Documents/workspace
+			/ClothoUIStarter/WebContent/519926989.514966.jpg">
+			<img src="file:///Users/jasonlu/Documents/workspace
+			/ClothoUIStarter/WebContent/519926989.514966.jpg" alt="newold"></a>
+		</td>
+		<!--  format of date / time uploaded: 
+		years-months-days hours:minutes:seconds
+		yyyy-mm-dd hh:mm:ss -->
+		<td>2017-04-22 17:45:46</td>
+		
+		<!-- method apparently deprecated? -->
+		<!--
+		<td><time datetime="2017-04-22 17:45:46"></time></td>
+		-->
+		
+	</tr>
+	
+	<tr>
+		<td>Image 2: Gel Assembly Parts 
+		(Bbn, NC, GFP Requirements , NC, GFP backbone)</td>
+		<td align="center">2</td>
+		<td><a target= "_blank" 
+			href="file:///Users/jasonlu/Documents/workspace/
+			ClothoUIStarter/WebContent/519926910.957125.jpg">
+			<img src="file:///Users/jasonlu/Documents/workspace
+			/ClothoUIStarter/WebContent/519926910.957125.jpg" alt="gel"></a>
+		</td>
+		<td>2017-4-21 18:46:53</td>
+	</tr>
+	
+	<tr>
+		<td>Image 3: DNA Fragment Temperature</td>
+		<td align="center">3</td>
+		<td><a target= "_blank"
+			href="file:///Users/jasonlu/Documents/workspace/
+			ClothoUIStarter/WebContent/519926847.239698.jpg">
+			<img src="file:///Users/jasonlu/Documents/workspace
+			/ClothoUIStarter/WebContent/519926847.239698.jpg" alt="temp"></a>
+		</td>
+		<td>2017-6-23 12:07:00</td>
+	</tr>
+	
+	<tr>
+		<td>Image 4: Various Lanes for Experiment:</td>
+		<td align="center">4</td>
+		<td><a target= "_blank"
+			href="file:///Users/jasonlu/Documents/workspace
+			/ClothoUIStarter/WebContent/519926710.952032.jpg">
+			<img src="file:///Users/jasonlu/Documents/workspace
+			/ClothoUIStarter/WebContent/519926710.952032.jpg" alt="lanes"></a>
+		</td>
+		<td>2017-6-23 12:05:00</td>
+	</tr>
+</table> 
+
+<!-- separate place to upload image from Desktop: -->
+
+<h3 style="color:red;">
+Upload your own image onto the Desktop 
+(.png, .jpeg / .jpg, or .img are preferred,
+Resolution should not exceed 1500 * 1500 pixels)
+</h3>
+
+<input type="file" id="userFile">
+
+<!--  JavaScript embedded to allow button to be clicked -->
+<button onclick="submit()">Submit</button>
+
+<script>
+function submit() {
+	var a = document.getElementById("userFile").submit();
+}
+</script>
+
+</body>
+</html>
