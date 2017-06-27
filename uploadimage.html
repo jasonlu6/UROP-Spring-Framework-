@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gibson Assembly Image Uploader</title>
+</head>
+<body>
+
+<!-- File: uploadimage.html -->
+<!-- Author: Jason Lu (jasonlu6@bu.edu) -->
+<!--  Description: HTML File that will allow the 
+user to upload an image (make resolution maximum be 1500*1500 pixels)
+and then be able to make a wrapped text box for gel information
+and additional description (if necessary) -->
+
+<!-- Densmore CIDAR LAB -->
+<!-- UROP Project 3 -->
+
+<!-- Collaborators: -->
+<!-- Rohin Banerji (rohinb96@bu.edu) -->
+<!-- Marliene Pavan (mapavan@bu.edu) -->
+<!-- Doug Densmore (dougd@bu.edu) -->
+
+<!-- select HTML object (for each of the lanes [assume 5 as default]) -->
+
+<!--  embed some CSS to make sure that the 
+selection lanes are not too big -->
+
+<!-- background image (CIDAR lab) for the site -->
+
+<img src="file:///Users/jasonlu/Documents/
+workspace/ClothoUIStarter/WebContent/cidar.png" style="background-color:white;" />
+
+<style type="text/css">
+img {
+	/* gray border by default */
+	border: 1px solid #ddd;
+	/* maybe square for now */
+	border-radius: 2px;
+	/* padding alignment */
+	padding: 50px;
+	/* set a width for image */
+	width: 1000px;
+	/* set a height for image */
+	height: 500px; 
+}
+</style>
+
+<style type="text/css">
+	select {
+		width:50px;
+		height:25px;
+	}
+</style>
+
+Lane 1
+<select>
+	<option value="backbone">Backbone</option>
+	<option value="GFP">GFP</option>
+	<option value="NC">NC</option>
+	<option value="Gel">Gel</option>
+	<option value="Lacl">Lacl Sensor</option>
+</select>
+
+Lane 2
+<select>
+	<option value="backbone">Backbone</option>
+	<option value="GFP">GFP</option>
+	<option value="NC">NC</option>
+	<option value="Gel">Gel</option>
+	<option value="Lacl">Lacl Sensor</option>
+</select>
+
+Lane 3
+<select>
+	<option value="backbone">Backbone</option>
+	<option value="GFP">GFP</option>
+	<option value="NC">NC</option>
+	<option value="Gel">Gel</option>
+	<option value="Lacl">Lacl Sensor</option>
+</select>
+
+Lane 4
+<select>
+	<option value="backbone">Backbone</option>
+	<option value="GFP">GFP</option>
+	<option value="NC">NC</option>
+	<option value="Gel">Gel</option>
+	<option value="Lacl">Lacl Sensor</option>
+</select>
+
+Lane 5
+<select>
+	<option value="backbone">Backbone</option>
+	<option value="GFP">GFP</option>
+	<option value="NC">NC</option>
+	<option value="Gel">Gel</option>
+	<option value="Lacl">Lacl Sensor</option>
+</select>
+
+<!--  Lane 6 is disabled for now -->
+Lane 6
+<select disabled>
+	<option value="backbone">Backbone</option>
+	<option value="GFP">GFP</option>
+	<option value="NC">NC</option>
+	<option value="Gel">Gel</option>
+	<option value="Lacl">Lacl Sensor</option>
+</select>
+
+<!--  some additional whitespace -->
+<br></br>
+
+<h3 style="color:red;">
+Upload Your Image:
+</h3>
+
+<!-- modification / credit to: George Dunlop (Vacdesign) -->
+<!-- http://jsfiddle.net/vacidesign/ja0tyj0f/ -->
+
+<input type='file' >
+<img id="userImage" src="#" alt="imageOfUser">
+
+<!-- embed some JavaScript (JSFiddle) -->
+<script>
+$(function() {
+	$(":file").change(function () {
+		// determine if the files match with reader 
+		// and user upload
+		if (this.files && this.files[0]) {
+			var imageReader = new FileReader();
+			imageReader.onload = imageIsLoaded;
+			imageReader.readAsDataURL(this.files[0]);
+		}
+	});
+});
+
+// determine if the image has been uploaded 
+function imageIsLoaded(img) {
+	$('#userImage').attr('src',img.target.result);
+};
+</script>
+
+<!-- wrappable text box (textarea)
+ to input gel information (make it default 
+ 20 character rows and 5 character columns): -->
+ 
+ <h4 style="color:green;">
+ Gel Information 
+ <br>(to be filled by CIDAR scientist):</br>
+ </h4>
+ 
+<!-- form to submit the gel info -->
+<!-- gibberish default text -->
+<form action="/action_page.php">
+<textarea rows="20" cols="10" name="usertext" wrap="hard">
+ 
+Lorem ipsum cidar gel me no like build apps 
+custom your for business densmore doug 
+testing testing 1 2 3
+</textarea>
+<input type="submit">
+</form>
+
+</body>
+</html>
