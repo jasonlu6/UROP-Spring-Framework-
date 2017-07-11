@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Repo</title>
+</head>
+<body>
+
+<!-- File: repo.html -->
+<!-- Author: Jason Lu (jasonlu6@bu.edu) -->
+<!-- Dates:  7/10/2017 - 7/17/2017 -->
+
+<!-- Description: Simple "storage" HTML webpage that will allow the users
+to specify which photos to tag, and also be able to allow the user to see the related
+tagged images -->
+
+<!-- Extension: can also add pictures / data from Mary's MoClo Computing later
+in a separate webpage -->
+
+<!-- Densmore CIDAR LAB -->
+<!-- UROP Project 3 -->
+
+<!-- Collaborators: -->
+<!-- Rohin Banerji (rohinb96@bu.edu) -->
+<!-- Marliene Pavan (mapavan@bu.edu) -->
+<!-- Doug Densmore (dougd@bu.edu) -->
+
+<br></br>
+
+<h1 style="background-color:red">Repository for Gibson Assembly:</h1>
+
+<!-- search bar for the user to see which photos should be tagged -->
+<!-- Animated Search Form (expandable version) -->
+<!-- Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_anim_search -->
+
+
+<!-- CSS embedding -->
+<style>
+
+input[type=text] {
+	/* width of the search bar (by default) */
+	width = 200px;
+	/* border box search bar */
+	box-sizing: border-box;
+	/* how large the border should be / color (grey) */
+	border: 1px solid #ccc;
+	/* how much should border span (radius) */
+	border-radius: 4px;
+	/* how big the font should be (16 by default) */
+	font-size: 16px;
+	/* background-color (for Gibson Assembly, cyan) */
+	background-color: cyan;
+	/* positioning of the background (10 x 10 pixels) */
+	background-position: 10px 10px;
+	/* no repeat for background */
+	background-repeat: no-repeat;
+	/* generally large padding */
+	padding: 12px 20 px 12 px 60 px;
+	/* transition (for animated effect) */
+	-webkit-transition: width 0.4s ease-in-out;
+	/* same transition as above */
+	transition: width 0.4s ease-in-out;
+}
+
+/* if search query gets too large, refocus */
+input[type=text]:focus {
+	width: 100%;
+}
+</style>
+
+<!--  place for the user to start searching within repo -->
+<p>Please Search Within the Repository:</p>
+
+<form>
+	<input type="text" name="gibson" placeholder="Press Enter To Search..">
+</form>
+
+<!-- place where the images will be stored (in table form) -->
+
+<!-- a better way to keep track of the tagged images rather than just going through Google Photos -->
+<!-- Tagged?: boolean (yes or no) -->
+<!-- Images: links to the images that were tagged -->
+<!-- Date of Upload: most recent image upload date (assume one at a time) -->
+<!-- Date Tagged: the most recent date a particular image is tagged (assume one at a time) -->
+
+<!-- some whitespace -->
+<br></br>
+<br></br>
+
+<h2 style="background-color:yellow">Image Repository:</h2>
+
+<br></br>
+
+<table border=1>
+	<tr>
+		<td>Tagged?</td>
+		<td>Images</td>
+		<td>Date of Upload</td>
+		<td>Date Tagged</td>
+	</tr>
+	
+	<!-- Backbone -->
+	<tr>
+		<td>yes</td>
+		<td><a href="https://photos.google.com/share/AF1QipO6YES-wxuIPUs8MeTllKxQmh4ssP246pM1xsCfgg5QnFkJjbdat
+		Rw_MB7M2yf5Nw?key=YUVwRzJkZV9YWjNMS0J5UEVWSDB6TERzcFNjcDZn">bbn</a>
+		<td>6-23-2017</td>
+	
+	<!--
+	<script type="text/javascript">
+	// get the upload date by HTML 
+	document.getElementById("upload").innerHTML = Date();
+	</script>
+	
+		</td>
+	-->
+		
+		<td><time>07-11-2017</time></td>
+	</tr>
+	
+	<!-- Lacl Sensor -->
+	<tr>
+		<td>no</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- GFP -->
+	<tr>
+		<td>no</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Other -->
+	<tr>
+		<td>no</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+
+</table>
+
+</body>
+</html>
+
+<html>
+	<head>
+		<title>Date of Upload: </title>
+	</head>
+	
+	<body>
+	<p id="upload"></p>
+	
+	<script type="text/javascript">
+	
+	// get the upload date by HTML 
+	document.getElementById("upload").innerHTML = Date();
+	
+	</script>
+	</body>
+</html>
