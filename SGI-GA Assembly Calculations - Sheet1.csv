@@ -1,0 +1,25 @@
+Primer,,,,,,DNA Fragment,,,,,PCR Amplified Product,,,,,,,,,,Gibson Assembly,,,,,
+Tube #,3' End,Conc (nmol),Mass (mg),Primer Size (bp,Name of Primer,Melting Temp (C),Name,Location,DNA frgmnt Size (kb),dna weight,Conc ng/uL,A260/280,pmol/uL,target DNA ng,Reqd Vol in uL,target pmol,Reqd Vol in uL acc to pmol,pmol in solution,,#,Step,vol in uL,time in min,temp in Celsius,cycles,reason/note
+258,TCAA,23.2,0.29,20,pNR160 BackBone FWD,56.8,Backbone,,,0,48,1.77,0.011012433,25,0.52,0.005-0.008,0.45,0.005735642,,1,DNA mix Vol. ,5,,,,
+259,GGC,23.3,0.29,20,pNR160 BackBone REV,52.7,,pNR160,6756,7.29105E-09,,,,,,,,0,,2,Mm A (2X) Vol.,5,,,,Thaw on ice/Vortex just before use
+260,GTC,25.3,0.32,21,TP901B-TC FWD,56.2,TP901B-TC,,,0,63,1.69,0.718014706,40,0.63,0.2,0.28,0.455882353,,3,GA Pos. Control,5,,,,
+261,TGCG,18,0.22,20,TP901B-TC REV,60.5,,pNR160,136,1.46771E-10,,,,,,,,0,,4,Mm A (2X) Vol.,5,,,,
+262,CTAC,23.3,0.29,20,TP901B-AG FWD,56.8,TP901B-AG,,,0,61.2,1.67,0.702666667,40,0.65,0.2,0.28,0.459259259,,,,,,,,
+263,GACG,17.3,0.21,20,TP901B-AG REV,58.5,,pNR160,135,1.45692E-10,,,,,,,,0,,5,Thermocycle,,5,37,1,since overlap<80bp
+264,GGGA,23.1,0.35,29,proD FWD,52.4,proD,,,0,50.3,1.76,0.541423611,40,0.8,0.2,0.37,0.430555556,,,,,20,75,1,inactivation
+265,TCGT,23.4,0.28,20,proD REV,57.1,,pNR291,144,1.55404E-10,,,,,,,,0,,,,,2.5,60,1,cooling to 60 @ 0.1 Celsius/sec
+266,GGCG,18,0.23,20,BxBIB-GT FWD,59.1,BxBIB-GT,,,0,46.4,1.82,0.54075188,40,0.86,0.2,0.37,0.466165414,,,,,30,60,1,anneal
+267,ACCG,20.7,0.25,20,BxBIB-GT REV,57.5,,pNR160,133,1.43533E-10,,,,,,,,0,,,,,9.333333333,4,1,cooling to 4 @ 0.1 Celsius/sec
+268,TGCTT,24.6,0.3,20,BFP FWD,60,BFP,,,0,50.9,1.6,0.094825721,40,0.79,0.2,2.11,0.074519231,,,,,,,,
+269,GCGC,18,0.23,21,BFP REV,56.3,,pNR291,832,8.97891E-10,,,,,,,,0,,,Mm B (2X),10,,,,
+270,AGA,25.2,0.31,20,TP901P-AG FWD,58.7,TP9019P-AG,,,0,41.9,1.73,0.481074074,40,0.95,0.2,0.42,0.459259259,,6,,,,,,
+271,TGTC,30.4,0.38,20,TP901P-AG REV,54.4,,pNR160,135,1.45692E-10,,,,,,,,0,,,Incubation,,15,45,,Thaw on ice/Vortex just before use
+272,ATG,20.8,0.25,20,BxBIP-GT FWD,59.5,BxBIP-GT,,,0,44,1.64,0.476923077,40,0.91,0.2,0.42,0.433566434,,7,Rxn complete,,,,,
+273,GCTA,23.8,0.29,20,BxBIP-GT REV,57.7,,pNR160,143,1.54325E-10,,,,,,,,0,,,Transformation/Storage,,,,,
+274,TGCA,25.7,0.31,20,TP901P-TC FWD,58.7,TP901P-TC,,,0,61.6,1.73,0.712537313,40,0.65,0.2,0.28,0.462686567,,,,,,,,
+275,AGGC,23.4,0.29,20,TP901P-TC REV,54.5,,pNR160,134,1.44612E-10,,,,,,,,0,,,,,,,,
+276,GCTT,26.6,0.33,20,GFP FWD,58.5,GFP,,,0,209.9,1.8,0.368871882,40,0.19,0.2,0.54,0.070294785,,,,,,,,
+277,AGCC,26.1,0.34,22,GFP REV,53.7,,from a gblock,882,9.51851E-10,,,,,,,,0,,,,,,,,
+,,,,,,,,,,,,,,Tot. Vol. Parts: ,6.96,,5.52,,,,,,,,,
+,,,,,,,,,,,,,,Vol. ddH20:,-1.96,,-0.52,,,,,,,,,
+,,,,,,,,,,,,,,Tot. Vol. Rxn:,5,,5,,,,,,,,,
