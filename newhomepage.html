@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gibson Assembly Homepage</title>
+</head>
+<body>
+
+<!-- File: newhomepage.html -->
+<!-- Author: Jason Lu (jasonlu6@bu.edu) -->
+<!-- Date: 7/5/2017 -->
+
+<!--  Description: The webpage is a new (and improved)
+design of the Gibson Assembly Homepage, which will allow
+each image thumbnail to link to a "repository" of related images
+in a 'tagging' action. Collaborated with Rohin on overall design
+and structure of the new homepage -->
+
+<!-- Outside sources: -->
+<!-- Benchling (for plasmid and microbiological samples -->
+<!--  Google Photos (from Rohin's Lab Notebook) -->
+
+<!-- Densmore CIDAR LAB -->
+<!-- UROP Project 3 -->
+
+<!-- Collaborators: -->
+<!-- Rohin Banerji (rohinb96@bu.edu) -->
+<!-- Marliene Pavan (mapavan@bu.edu) -->
+<!-- Doug Densmore (dougd@bu.edu) -->
+
+<title>Gibson Assembly Primer</title>
+
+<head>Welcome to the Gibson Assembly Primer Page</head>
+<br> 
+
+<head>We have some sample DNA fragments from tubes that can be used
+to determine what type of primer it contains and a specific image pertaining
+to that primer</head>
+
+The table can be queried in the following manner (with SQL): 
+
+<br>
+
+Example: select all tables with mass of 29 milligrams (29 mg) 
+
+<br>
+
+<code>SELECT table.Mass (mg)</code>
+<code>FROM table</code>
+<code>WHERE table.Mass (mg) = 29</code>
+
+<!--  CSS table embedding -->
+
+<!-- same as the previous 
+version of Gibson Assembly Homepage -->
+
+<style>
+
+<code>
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse; 
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-algin: left;
+	padding: 8px;
+}
+
+tr: nth-child(even) {
+	background-color: #dddddd;
+}
+
+</style>
+</head>
+<body>
+
+<!-- new version of the table (expanded form) -->
+<!--  colspan method to get the expanded form -->
+
+
+<br></br> 
+
+<h1 style="background-color:cyan">DNA Fragment Table:</h1>
+<!--  odd fragments: name only -->
+<!--  even fragments: location and DNA fragment sizes only -->
+<table>
+
+<!-- DNA fragment: Colspan = 3 -->
+	<tr>
+		<td colspan="3">DNA Fragment</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Name</td>
+		<td>Location</td>
+		<td>DNA Fragment Size (kb)</td>
+	</tr>
+	
+	<!-- Fragment 1 -->
+	<tr>
+		<td>Backbone</td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 2 -->
+	<tr>
+		<td></td>
+		<td>pNR160</td>
+		<td>6756</td>
+	</tr>
+	
+	<!--  Fragment 3 -->
+	<tr>
+		<td>TP901B-TC</td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 4 -->
+	<tr>
+		<td></td>
+		<td>pNR160</td>
+		<td>136</td>
+	</tr>
+	
+	<!-- Fragment 5 -->
+	<tr>
+		<td>TP901B-AG</td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 6 -->
+	<tr>
+		<td></td>
+		<td>pNR160</td>
+		<td>135</td>
+	</tr>
+	
+	<!-- Fragment 7 -->
+	<tr>
+		<td>proD</td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 8 -->
+	<tr>
+		<td></td>
+		<td>pNR291</td>
+		<td>144</td>
+	</tr>
+
+	<!-- Fragment 9 -->
+	<tr>
+		<td>BxBIB-GT</td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 10 -->
+	<tr>
+		<td></td>
+		<td>pNR160</td>
+		<td>133</td>
+	</tr>
+	
+	<!-- Fragment 11 -->
+	<tr>
+		<td>BFP</td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 12 -->
+	<tr>
+		<td></td>
+		<td>pNR291</td>
+		<td>832</td>
+	</tr>
+	
+	<!-- Fragment 13 -->
+	<tr>
+		<td>TP0919P-AG</td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 14 -->
+	<tr>
+		<td></td>
+		<td>pNR160</td>
+		<td>135</td>
+	</tr>
+	
+	<!-- Fragment 15 -->
+	<tr>
+		<td>BxBIP-GT</td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 16 -->
+	<tr>
+		<td></td>
+		<td>pNR160</td>
+		<td>143</td>
+	</tr>
+	
+	<!-- Fragment 17 -->
+	<tr>
+		<td>TP901P-TC</td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 18 -->
+	<tr>
+		<td></td>
+		<td>pNR160</td>
+		<td>134</td>
+	</tr>
+	
+	<!-- Fragment 19 -->
+	<tr>
+		<td>GFP</td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 20 -->
+	<tr>
+		<td></td>
+		<td>from a gblock</td>
+		<td>882</td>
+	</tr>
+	
+</table>
+
+<br></br>
+
+<h2 style="background-color:green">PCR Table:</h2> 
+
+<!-- seperate table for PCR -->
+<!-- colspan = 8 -->
+<table>
+	<tr>
+		<td colspan="8">PCR</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Polymerase</td>
+		<td>Temperature</td>
+		<td>Extension Time</td>
+		<!-- hyperlink to forward image repo on Benchling -->
+		<td>Primer Fwd</td>
+		<!-- hyperlink to reverse image repo on Benchling -->
+		<td>Primer Rev</td>
+		<td>Conc</td>
+		<td>A260/280</td>
+		<td>image</td>
+	</tr>
+	
+	<!-- Fragment 1 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<!-- figure out how to make a hyperlink for this entry -->
+		<td>258</td>
+		<td>259</td>
+		<td></td>
+		<td></td>
+		<!-- same here, link to the Google Photos -->
+		<td>bbn</td>
+	</tr>
+	
+	<!-- Fragment 2 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 3 -->
+		<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 4 -->
+		<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 5 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 6 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 7 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 8 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 9 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 10 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 11 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 12 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 13 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 14 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+
+	<!-- Fragment 15 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 16 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+
+	<!-- Fragment 17 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 18 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 19 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	<!-- Fragment 20 -->
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+
+</table>
+</body>
+</html>

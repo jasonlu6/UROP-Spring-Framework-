@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+@CHARSET "UTF-8";
+
+/* File: thumbnials.css 
+   Author: Jason Lu (jasonlu6@bu.edu) 
+   Description: CSS file that will render the images in the 
+   Gibson Assembly Primer in a thumbnail format. 
+   Densmore CIDAR LAB  
+   UROP Project 3 
+   Collaborators: 
+   Rohin Banerji (rohinb96@bu.edu)
+   Marliene Pavan (mapavan@bu.edu) 
+   Doug Densmore (dougd@bu.edu) */
+   
+   /* Note: the CSS is embedded in HTML in 
+   order to render the thumbnails */
+   
+   /* Cannot run by itself, must be embedded within HTML */
+   
+/* References / Sources: */
+/* https://www.w3schools.com/howto/howto_css_thumbnail.asp */
+
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1 style="color:blue;">Image 1 From Notebook:</h1>
+
+/* CSS of image 1 */ 
+<style> 
+img1 {
+	/* gray border by default */
+	border: 1px solid #ddd;
+	/* maybe square for now */
+	border-radius: 2px;
+	/* padding alignment */
+	padding: 5px;
+	/* set a width for thumbnail */
+	width: 150px;
+	/* set a height for thumbnail */
+	height: 200px; 
+}
+
+/* blue shadow hover effect */
+/* RGBA: Red, Green, Blue, alpha (transparent vs. opaque) */
+img1: hover {
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/<style>
+
+/* target reference to the image */
+/* The New vs. Old Primer Test from Rohin's Notebook */
+<a target="_blank" href="519926989.514966.jpg">
+<img src="519926989.514966.jpg alt="newold">
+</a>
+
+</body>
+</html>

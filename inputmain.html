@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Input</title>
+</head>
+<body>
+
+<!-- File: inputmain.html -->
+<!-- Author: Jason Lu (jasonlu6@bu.edu) -->
+<!--  Description: The user is able to put any input necessary 
+in order to have the Gibson Assembly output the image that
+is being tagged from the thumbnails.html file -->
+
+<!-- Densmore CIDAR LAB -->
+<!-- UROP Project 3 -->
+
+<!-- Collaborators: -->
+<!-- Rohin Banerji (rohinb96@bu.edu) -->
+<!-- Marliene Pavan (mapavan@bu.edu) -->
+<!-- Doug Densmore (dougd@bu.edu) -->
+
+<!-- note: the page is organized entirety as a confimration form -->
+
+<!--  form 1: upload file  -->
+<h1 style="color:blue">Upload File for Gibson Assembly:</h1>
+<form action="/action_page.php" id="fileform">
+	Filename:<input type="text" name="filename">
+	<input type="submit">
+</form>
+
+<!-- tell the user what is the type of the file -->
+<h2>Please give the format of the file being selected: </h2>
+<select name="filelist" form="fileform">
+	<option value=".fasta">FASTA</option>
+	<option value=".genbank">GEN BANK</option>
+	<option value=".csv">CSV file</option>
+	<option value=".docx">Word Document</option>
+	<option value=".xcl">Excel Spreadsheet</option>
+	<option value="other">Other</option>
+</select>
+	Please write the format: 
+	<input type="text" name="otherformat">
+	<input type="submit">
+	
+<!-- allow user to upload the file -->
+<!--  embed some JavaScript -->
+
+<!-- modification / credit to: George Dunlop (Vacdesign) -->
+<!-- http://jsfiddle.net/vacidesign/ja0tyj0f/ -->
+
+<input type='file' >
+<img id="userImage" src="#" alt="imageOfUser">
+
+<!-- embed some JavaScript (JSFiddle) -->
+<!--  reused code from uploadimage.html -->
+<script>
+$(function() {
+	$(":file").change(function () {
+		// determine if the files match with reader 
+		// and user upload
+		if (this.files && this.files[0]) {
+			var imageReader = new FileReader();
+			imageReader.onload = imageIsLoaded;
+			imageReader.readAsDataURL(this.files[0]);
+		}
+	});
+});
+
+// determine if the image has been uploaded 
+function imageIsLoaded(img) {
+	$('#userImage').attr('src',img.target.result);
+};
+</script>
+
+<!-- embed some PHP to process the user's input -->
+<script>
+</script>
+
+</body>
+</html>

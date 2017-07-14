@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<title>Gibson Assembly Primer</title>
+
+<head>Welcome to the Gibson Assembly Primer Page</head>
+<br> 
+
+<head>We have some sample DNA fragments from tubes that can be used
+to determine what type of primer it contains and a specific image pertaining
+to that primer</head>
+
+The table can be queried in the following manner (with SQL): 
+
+<br>
+
+Example: select all tables with mass of 29 milligrams (29 mg) 
+
+<br>
+
+<code>SELECT table.Mass (mg)</code>
+<code>FROM table</code>
+<code>WHERE table.Mass (mg) = 29</code>
+
+<style>
+
+<code>
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<table>
+
+  <!-- general attributes --> 
+  <!-- Tube: the tube number of the primer -->
+  <!-- 3' End: the ending 3 molecules of DNA --> 
+  <!-- Conc(mol): the concentration (in mols) -->
+  <!-- Mass(mg): the mass of primer (in milligrams) -->
+  <!-- Primer size(bp): size of primer (base pair) -->
+  <!-- Name of primer: name of the primer being used --> 
+  
+  <tr>
+    <th>Tube #</th>
+    <th>3' End</th>
+    <th>Conc (nmol)</th>
+    <th>Mass (mg)</th>
+    <th>Primer Size(bp)</th>
+    <th>Name of Primer</th>
+    <th>Image of Primer (hyperlink)</th>
+  </tr>
+  
+  <!-- tube 258 --> 
+  
+  <tr>
+    <td>258</td>
+    <td>TCAA</td>
+    <td>23.2</td>
+    <td>0.29</td>
+    <td>20</td>
+    <td>pNR160 BackBone FWD</td>
+    <td>
+    	<a href="https://www.addgene.org/79542/">Image 1</a>
+    </td>
+  </tr>
+  
+  <!-- tube 259 --> 
+  <tr>
+  	<td>259</td>
+    <td>GGC</td>
+    <td>23.3</td>
+    <td>0.29</td>
+    <td>20</td>
+    <td>pNR160 BackBone REV</td>
+    <td>
+    	<a href="http://www.addgene.org/79542/">Image 2</a>
+  </tr>
+  
+  <!-- tube 260 -->
+  <tr>
+  	<td>260</td>
+    <td>GTC</td>
+    <td>25.3</td>
+    <td>0.32</td>
+    <td>21</td>
+    <td>TP901B-TC FWD</td>
+    <td>
+    	<a href="http://archive.cnx.org/resources/2fd36fdbcc8ece5366feb9b7513b8eaa151e3e08/Figure_09_01_03ab.jpg"> Image 3</a>
+  </tr>
+  
+  <!-- tube 261 --> 
+  <tr>
+  	<td>261</td>
+    <td>TGCG</td>
+    <td>18</td>
+    <td>0.22</td>
+    <td>20</td>
+    <td>TP901B-TC REV</td>
+    <!--  adding a dummy image -->
+    <td>
+    	<a href="https://i.ytimg.com/vi/s8zKosaLFUw/maxresdefault.jpg">Image 4</a>
+    </td>
+  </tr>
+  
+  <!-- tube 262 --> 
+  <tr>
+  	<td>262</td>
+    <td>CTAC</td>
+    <td>23.3</td>
+    <td>0.29</td>
+    <td>20</td>
+    <td>TP901B-AG FWD</td>
+    <td>
+    <!--  BU Bio Informatics Site -->
+    	<a href="http://www.bu.edu/bioinformatics/files/2009/04/bioinformatics-departments.png">Image 5</a>
+  </tr>
+  
+  <!-- tube 263 -->
+  <tr>
+  	<td>263</td>
+    <td>GACG</td>
+    <td>17.3</td>
+    <td>0.21</td>
+    <td>20</td>
+    <td>TP901B-AG REV</td>
+    <td>
+    	<!--  cool pipetting image -->
+    	<a href="http://www.pipettipfinder.com/Images/Topics/8-Channel-Pipetting-Labcon.jpg">Image 6</a>
+    </td>
+  </tr>
+  
+  <!-- tube 264 --> 
+  <tr>
+  	<td>264</td>
+    <td>GGGA</td>
+    <td>23.1</td>
+    <td>0.35</td>
+    <td>29</td>
+    <td>proD FWD</td>
+    <td>
+    <!--  dummy primer recognition image -->
+    	<a href="http://www.gmotesting.com/images/primerrecognition4-2-12b.png">Image 7</a>
+    </td>
+  </tr>
+  
+  <!-- tube 265 --> 
+  <tr>
+  	<td>265</td>
+    <td>TCGT</td>
+    <td>23.4</td>
+    <td>0.28</td>
+    <td>20</td>
+    <td>proD REV</td>
+    <td>
+    	<!--  dummy image of some scientist -->
+    	<a href="http://www.chem.ucsb.edu/hangroup/sites/secure.lsit.ucsb.edu.chem.d7_han/files/sitefiles/gallery/tour/wet_lab.jpg">
+    	Image 8</a>
+    </td>
+  </tr>
+  
+  <!-- tube 266 --> 
+  <tr>
+  	<td>266</td>
+    <td>GGCG</td>
+    <td>18</td>
+    <td>0.23</td>
+    <td>20</td>
+    <!-- last image: DNA Enzyme -->
+    <td>BxBIB-GT FWD</td>
+    <td>
+    	<a href="http://www.bio.miami.edu/dana/pix/replication.jpg">Image 9</a>
+    </td>
+  </tr>
+</table>
+
+Links to the other features of the Gibson Assemblies: 
+<table>
+	<tr>
+		<td>
+			<a href="http://localhost:8080/ClothoUIStarter/fragment.html">DNA Fragments</a>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<a href="http://localhost:8080/ClothoUIStarter/pcrsimplified.html">PCR Simplified
+			Products</a>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<a href="http://localhost:8080/ClothoUIStarter/procedure.html">Procedure For the 
+			Gibson Assembly</a>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
