@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!-- bootstrap -->
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery Library (for JavaScript querying) / AJAX API -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- latest compiled JavaScript -->
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+body {
+	background-image:url("cidar.png");
+	/* teal background-color */
+	background-color:white;
+	/* avoid repeating image in background */
+	background-repeat: no-repeat;
+}
+</style>
+
+<title>External Links</title>
+</head>
+<body>
+
+<!-- File: externallinks.html -->
+
+<!-- File: primer_boostrap.html -->
+<!-- Author: Jason Lu (jasonlu6@bu.edu) -->
+<!-- Densmore CIDAR LAB -->
+<!-- UROP Project 5 (revised version of Project 3) -->
+
+
+<!-- Collaborators: -->
+<!-- Rohin Banerji (rohinb96@bu.edu) -->
+<!-- Marliene Pavan (mapavan@bu.edu) -->
+<!-- Doug Densmore (dougd@bu.edu) -->
+<!-- Jerome Andaya (jandaya@bu.edu) -->
+
+<!-- Description: this website is used as a direct connection to other (external sites),
+such as Syn Bio Hub, iGEM, ICE, Benchling, and other computing tools used in the CIDAR LAB.
+It also will tell the user which photos were being added / updated. 
+
+Used with express permission of the Densmore lab and CIDAR LAB Wetlab Division -->
+
+<!-- Logos in a navigation bar -->
+
+<!-- add some whitespace -->
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<h1>To connect to other sites, click on one of the buttons below: </h1>
+
+<!-- 1) make a button class for SynBioHub -->
+
+<!-- source of SynBioHub button -->
+<!-- file:///Users/jasonlu/Documents/workspace/Bootstrapped%20Recombinase%20Webpage/WebContent/synbiohub.jpg -->
+
+<!-- technically, using a glyphicon as well,
+although SynBioHub is more of an outlet to a 
+different website -->
+
+<div class="btn-group btn-group-sm">
+	<button type="button" class="btn btn-primary 
+	button-image glyphbutton">SynBioHub</button>
+</div>
+
+
+<!-- embed some CSS -->
+<style>
+/* main button page */
+/* source: 
+https://codepen.io/jfgilbert/pen/LppbLz
+*/
+
+.button-image:before: {
+	content: "";
+	
+	/* make a small square icon */
+	width=: 16px;
+	height: 16px;
+	display: inline-block;
+	
+	/* give some margin between icons */
+	margin-right: 10px;
+	vertical-align: text-top;
+	/* do not want to mess up the icon */
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	}
+	
+.glyphbutton:before{
+/* background image */
+url(https://zachzundel.com/img/synbiohub.jpg)
+}
+</style>
+
+<br></br>
+
+<!-- image next to the icon -->
+
+<form action="https://synbiohub.org/">
+<input type="submit" value="Go To Site:" />
+</form>
+
+<br></br>
+
+<img src="synbiohub.jpg" class="img-thumbnail" alt="synbiohub" width="100" height="100">
+
+<br></br>
+
+<!-- 2) make a button class for iGEM -->
+
+<!-- source of iGEM button: -->
+<!-- file:///Users/jasonlu/Documents/workspace/Bootstrapped%20Recombinase%20Webpage/WebContent/igem.png -->
+
+<!-- small group of buttons -->
+
+<div class="btn-group btn-group-sm">
+	<button type="button" class="btn btn-success
+	button-image glyphbutton">iGEM</button>
+</div>
+
+<!-- embed some CSS -->
+<style>
+/* main button page */
+/* source: 
+https://codepen.io/jfgilbert/pen/LppbLz
+*/
+
+.button-image:before: {
+	content: "";
+	
+	/* make a small square icon */
+	width=: 16px;
+	height: 16px;
+	display: inline-block;
+	
+	/* give some margin between icons */
+	margin-right: 10px;
+	vertical-align: text-top;
+	/* do not want to mess up the icon */
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	}
+	
+.glyphbutton:before{
+/* background image */
+url(http://2014hs.igem.org/wiki/images/a/a5/LethHS2014_Igemlogo_whiteletters.png)
+}
+</style>
+
+<br></br>
+
+<!-- image next to the icon -->
+
+<form action="http://2017.igem.org/Main_Page">
+<input type="submit" value="Go To Site:" />
+</form>
+
+<br></br>
+
+<img src="igem.png" class="img-thumbnail" alt="iGEM" width="100" height="100">
+
+<br></br>
+
+<!-- 3) make a button class for Damp Lab -->
+
+<!-- source of iGEM button: -->
+<!-- file:///Users/jasonlu/Documents/workspace/Bootstrapped%20Recombinase%20Webpage/WebContent/igem.png -->
+
+
+<div class="btn-group btn-group-sm">
+	<button type="button" class="btn btn-danger
+	button-image glyphbutton">Damp Lab</button>
+</div>
+
+<!-- embed some CSS -->
+<style>
+/* main button page */
+/* source: 
+https://codepen.io/jfgilbert/pen/LppbLz
+*/
+
+.button-image:before: {
+	content: "";
+	
+	/* make a small square icon */
+	width=: 16px;
+	height: 16px;
+	display: inline-block;
+	
+	/* give some margin between icons */
+	margin-right: 10px;
+	vertical-align: text-top;
+	/* do not want to mess up the icon */
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	}
+	
+.glyphbutton:before{
+/* background image */
+url(file:///Users/jasonlu/Documents/workspace/Bootstrapped%20Recombinase%20Webpage/WebContent/igem.png)
+}
+</style>
+
+<br></br>
+
+<!-- image next to the icon -->
+
+<form action="http://damplab.org/">
+<input type="submit" value="Go To Site:" />
+</form>
+
+<br></br>
+
+<img src="damplab.png" class="img-thumbnail" alt="damplab" width="100" height="100">
+
+</body>
+</html>
