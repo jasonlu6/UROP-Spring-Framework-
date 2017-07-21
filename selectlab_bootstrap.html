@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- adding meta viewport for Bootstrap version 3.0.0 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- bootstrap imports / CDN: -->
+<!-- compiled / minified CSS -->
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery Library (for JavaScript querying) / AJAX API -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- latest compiled JavaScript -->
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Select A Lab</title>
+</head>
+<body>
+
+<!-- File: primer_boostrap.html -->
+<!-- Author: Jason Lu (jasonlu6@bu.edu) -->
+<!-- Densmore CIDAR LAB -->
+<!-- UROP Project 5 (revised version of Project 3) -->
+
+<!-- Extension (7/20/2017): Aria format for neater dropdown box -->
+
+<!-- Collaborators: -->
+<!-- Rohin Banerji (rohinb96@bu.edu) -->
+<!-- Marliene Pavan (mapavan@bu.edu) -->
+<!-- Doug Densmore (dougd@bu.edu) -->
+<!-- Jerome Andaya (jandaya@bu.edu) -->
+
+<!-- Description: After hearing feedback from Densmore in the WETLAB / DAMPLAB meeting, 
+the original project (Project 3 HTML Recombinase) needs a little "aesthetic / UI work" and to be 
+"reusable / useful" for future CIDAR scientists. So, this primer will essentially be the basis
+of what the new website login page could look like. -->
+
+<!-- Source used: (W3 Schools): https://www.w3schools.com/bootstrap/ -->
+
+<h1 style="background-color:red">CIDAR LAB SELECTION</h1>
+
+<br></br>
+
+<!-- change the dropdown menu to aria -->
+<!-- new format, easier to read / understand -->
+<div class="dropdown">
+	<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Select A Lab: 
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="https://www.cidarlab.org">CIDAR LAB</a></li>
+    <li><a href="http://www.bu.edu/bioinformatics/igert/curriculum/">WET LAB</a></li>
+    <li><a href="http://damplab.org/">DAMP LAB</a></li>
+    <li><a href="https://www.igem.org">iGEM</a>
+    <li role="separator" class="divider"></li>
+    </ul>
+</div>
+    
+<!-- add in bootstrap control states later -->
+   
+<!-- allow the user to other labs -->
+<div class="form-group">
+    <input type="text" class="form control" id="other">
+</div>
+
+<!--
+<div class="container">
+<p>Please select a lab below:</p>
+
+	<div class="dropdown">
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+		<span class="caret"></span></button>
+		<ul class="lab-selection">
+			<li><a href="https://www.cidarlab.org">CIDAR LAB</a></li>
+			<li><a href="https://www.wetlab.org">Wetlab</a></li>
+			<li><a href="https://www.damplab.org">Damplab</a></li>
+			<li><a href="https://www.igem.org">iGEM</a></li>
+			<li><a href="https://www.bu.edu/urop">Other</a></li>
+		</ul>
+	</div>
+</div> -->
+
+<!-- allow the user to move onto selecting actions -->
+<a href="http://localhost:8080/Bootstrapped_Recombinase_Webpage/selectaction.html">Move Onto Next Page</a>
+
+</body>
+</html>
